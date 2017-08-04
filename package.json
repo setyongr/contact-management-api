@@ -1,0 +1,35 @@
+{
+  "name": "nodeapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.js",
+    "start": "NODE_ENV=production pm2 start ./src/index.js",
+    "docs": "apidoc -i src -o docs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apidoc": "^0.17.6",
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-jwt": "^5.3.0",
+    "express-validation": "^1.0.2",
+    "joi": "^10.6.0",
+    "jsonwebtoken": "^7.4.1",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13",
+    "mongoose": "^4.11.5",
+    "pm2": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "apidoc": {
+    "title": "Custom apiDoc browser title",
+    "url": "https://localhost:3000/api"
+  }
+}
